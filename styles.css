@@ -2301,8 +2301,8 @@ body.proposal-single-screen {
   font-weight: 700;
 }
 
-.social-total-output {
-  grid-column: 1 / -1;
+.social-total-output,
+.seo-result-banner {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -2312,7 +2312,16 @@ body.proposal-single-screen {
   color: #FFFFFF;
 }
 
-.social-total-output > span {
+.social-total-output {
+  grid-column: 1 / -1;
+}
+
+.seo-result-banner {
+  margin-top: 18px;
+}
+
+.social-total-output > span,
+.seo-result-banner > span {
   flex-shrink: 0;
   color: #E5C39F;
   font-size: 0.65rem;
@@ -2321,7 +2330,8 @@ body.proposal-single-screen {
   text-transform: uppercase;
 }
 
-.social-total-output strong {
+.social-total-output strong,
+.seo-result-banner strong {
   font-size: 0.75rem;
   font-weight: 600;
   line-height: 1.5;
@@ -2414,7 +2424,8 @@ body.proposal-single-screen {
     grid-template-columns: 1fr;
   }
 
-  .social-total-output {
+  .social-total-output,
+  .seo-result-banner {
     align-items: flex-start;
     flex-direction: column;
     gap: 5px;
