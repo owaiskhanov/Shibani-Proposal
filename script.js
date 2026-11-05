@@ -140,6 +140,26 @@ document.addEventListener('DOMContentLoaded', () => {
     callsSlider.addEventListener('input', updateEstimate);
     updateEstimate();
   }
+
+  // 7. Include Every Social Media Dropdown in the Printable Proposal
+  const socialMediaDetails = document.querySelectorAll('.social-media-details details');
+
+  if (socialMediaDetails.length > 0) {
+    let openStatesBeforePrint = [];
+
+    window.addEventListener('beforeprint', () => {
+      openStatesBeforePrint = Array.from(socialMediaDetails, (detail) => detail.open);
+      socialMediaDetails.forEach((detail) => {
+        detail.open = true;
+      });
+    });
+
+    window.addEventListener('afterprint', () => {
+      socialMediaDetails.forEach((detail, index) => {
+        detail.open = openStatesBeforePrint[index] ?? false;
+      });
+    });
+  }
 });
 
 function escapeHtml(str) {
