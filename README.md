@@ -1,5 +1,9 @@
 # Says Skinn | Dr. Shibani Bhatia • Clinic Landing Page & Digital Growth Proposal
 
+**Live Domain:** [https://drs.stalite.in](https://drs.stalite.in)
+- **Landing Page:** [https://drs.stalite.in/index.html](https://drs.stalite.in/index.html)
+- **Growth Proposal:** [https://drs.stalite.in/proposal.html](https://drs.stalite.in/proposal.html)
+
 Two-page static web showcase prepared for **Dr. Shibani Bhatia** (**Says Skinn Dermatology, Trichology & Aesthetics**, 12th Road, Khar West, Mumbai):
 
 1. **`index.html`: Dermatologist Landing Page**
