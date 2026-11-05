@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Says Skinn">
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#1D2432"/>
+  <rect x="6.5" y="6.5" width="51" height="51" rx="11.5" fill="none" stroke="#C89768" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Primary Warm Porcelain Dermal Star -->
+  <path d="M29.5 16.5 C31.2 26.8 34.2 29.8 44.5 31.5 C34.2 33.2 31.2 36.2 29.5 46.5 C27.8 36.2 24.8 33.2 14.5 31.5 C24.8 29.8 27.8 26.8 29.5 16.5 Z" fill="#FCF9F6"/>
+  <!-- Secondary Champagne-Gold Accent Star -->
+  <path d="M45.5 12 C46.4 16.4 47.6 17.6 52 18.5 C47.6 19.4 46.4 20.6 45.5 25 C44.6 20.6 43.4 19.4 39 18.5 C43.4 17.6 44.6 16.4 45.5 12 Z" fill="#DAAC7C"/>
+</svg>

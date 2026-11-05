@@ -1,0 +1,26 @@
+{
+  "name": "Says Skinn — Dermatology, Trichology & Aesthetics | Dr. Shibani Bhatia",
+  "short_name": "Says Skinn",
+  "description": "Science-led clinical dermatology, trichology & aesthetic medicine by Dr. Shibani Bhatia in Khar West, Mumbai.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FCF9F6",
+  "theme_color": "#1D2432",
+  "icons": [
+    {
+      "src": "./assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "./assets/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
