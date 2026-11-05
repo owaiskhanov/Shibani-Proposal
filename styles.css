@@ -571,6 +571,61 @@ textarea {
   background-color: var(--bg-blush);
 }
 
+/* Minimal Bespoke Section Backgrounds */
+.section-bg-treatments {
+  position: relative;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(252, 249, 246, 0.82) 0%,
+      rgba(252, 249, 246, 0.58) 50%,
+      rgba(252, 249, 246, 0.84) 100%
+    ),
+    url('./assets/bg-treatments.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-bg-treatments .filter-tabs {
+  background-color: rgba(245, 236, 232, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.section-bg-treatments .treatment-card {
+  background-color: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.section-bg-consultation {
+  position: relative;
+  background-image:
+    linear-gradient(
+      180deg,
+      rgba(252, 249, 246, 0.80) 0%,
+      rgba(252, 249, 246, 0.62) 50%,
+      rgba(245, 236, 232, 0.86) 100%
+    ),
+    url('./assets/bg-consultation.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-bg-consultation .clinic-detail-card {
+  background-color: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.section-bg-consultation .booking-form-card {
+  background-color: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
 .section-header {
   display: flex;
   align-items: flex-end;
