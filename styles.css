@@ -102,6 +102,13 @@ textarea {
   padding: 0 24px;
 }
 
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 56px);
+}
+
 /* ==========================================================================
    Typography Helpers
    ========================================================================== */
@@ -393,35 +400,50 @@ textarea {
 }
 
 /* ==========================================================================
-   Landing Page: Hero Section
+   Landing Page: Full-Width Hero Section
    ========================================================================== */
 
 .hero-section {
   position: relative;
-  padding: 64px 0 84px;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
   background:
-    radial-gradient(circle at 86% 18%, rgba(245, 230, 213, 0.65) 0%, rgba(252, 249, 246, 0) 48%),
-    radial-gradient(circle at 8% 75%, rgba(245, 236, 232, 0.8) 0%, rgba(252, 249, 246, 0) 50%),
+    radial-gradient(circle at 38% 18%, rgba(245, 230, 213, 0.55) 0%, rgba(252, 249, 246, 0) 52%),
+    radial-gradient(circle at 8% 82%, rgba(245, 236, 232, 0.85) 0%, rgba(252, 249, 246, 0) 50%),
     var(--bg-canvas);
 }
 
 .hero-grid {
+  width: 100%;
+  max-width: 100%;
+  min-height: clamp(580px, calc(100svh - 116px), 800px);
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 54px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+  gap: 0;
+  align-items: stretch;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(44px, 5.5vw, 76px) clamp(28px, 4vw, 64px) clamp(44px, 5.5vw, 76px) clamp(20px, 4vw, 56px);
 }
 
 .hero-content h1 {
   margin-bottom: 20px;
+  max-width: 15ch;
 }
 
 .hero-content .lead-copy {
   margin-bottom: 30px;
+  max-width: 58ch;
 }
 
 .credential-inline {
   display: inline-block;
+  align-self: flex-start;
   background-color: var(--bg-blush);
   border: 1px solid rgba(166, 104, 94, 0.2);
   padding: 6px 14px;
@@ -446,6 +468,7 @@ textarea {
   gap: 20px;
   padding-top: 26px;
   border-top: 1px solid var(--border-subtle);
+  max-width: 640px;
 }
 
 .trust-metric strong {
@@ -467,28 +490,45 @@ textarea {
 
 .hero-visual {
   position: relative;
+  width: 100%;
+  min-height: 100%;
 }
 
 .hero-image-frame {
   position: relative;
-  border-radius: 32px 32px 24px 24px;
+  width: 100%;
+  height: 100%;
+  min-height: 580px;
   overflow: hidden;
   background-color: var(--bg-sand);
-  box-shadow: var(--shadow-elevated);
-  border: 6px solid #FFFFFF;
+}
+
+.hero-image-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--bg-canvas) 0%,
+    rgba(252, 249, 246, 0.55) 7%,
+    rgba(252, 249, 246, 0) 24%
+  );
+  pointer-events: none;
 }
 
 .hero-image-frame img {
   width: 100%;
-  height: 500px;
+  height: 100%;
+  min-height: 580px;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: 46% 22%;
 }
 
 .hero-floating-card {
   position: absolute;
-  left: -22px;
-  bottom: 24px;
+  right: clamp(20px, 4vw, 56px);
+  bottom: clamp(22px, 3.5vw, 38px);
+  z-index: 3;
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -496,7 +536,7 @@ textarea {
   border-radius: var(--radius-md);
   padding: 16px 20px;
   box-shadow: var(--shadow-elevated);
-  max-width: 295px;
+  max-width: 310px;
 }
 
 .floating-rating {
@@ -1709,13 +1749,32 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .hero-grid {
+    min-height: auto;
+  }
+
+  .hero-content {
+    padding: 44px clamp(20px, 4vw, 40px) 36px;
+  }
+
+  .hero-image-frame,
   .hero-image-frame img {
-    height: 430px;
+    min-height: 440px;
+    height: 440px;
+  }
+
+  .hero-image-frame::after {
+    background: linear-gradient(
+      180deg,
+      var(--bg-canvas) 0%,
+      rgba(252, 249, 246, 0) 20%
+    );
   }
 
   .hero-floating-card {
-    left: 16px;
-    bottom: 16px;
+    left: 20px;
+    right: auto;
+    bottom: 20px;
   }
 
   .treatments-grid,
@@ -1775,7 +1834,17 @@ textarea {
   }
 
   .hero-section {
-    padding: 40px 0 60px;
+    padding: 0;
+  }
+
+  .hero-content {
+    padding: 34px 20px 28px;
+  }
+
+  .hero-image-frame,
+  .hero-image-frame img {
+    min-height: 360px;
+    height: 360px;
   }
 
   .hero-trust-row {
