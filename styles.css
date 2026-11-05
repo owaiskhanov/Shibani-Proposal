@@ -2080,6 +2080,16 @@ body.proposal-single-screen {
   color: var(--brand-sage);
 }
 
+.pricing-original-price {
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration-color: var(--brand-rose);
+  text-decoration-thickness: 2px;
+  white-space: nowrap;
+}
+
 .pricing-period {
   font-size: 0.84rem;
   font-weight: 600;
