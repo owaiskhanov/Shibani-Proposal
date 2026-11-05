@@ -15,6 +15,6 @@ Two-page static web showcase prepared for **Dr. Shibani Bhatia** (**Says Skinn D
 2. **`proposal.html`: Pricing Proposal**
    - **Card 1 • Social Media Management (`₹25,000 / month` by Stalite Media LLP):** Seven closed-by-default dropdowns covering monthly deliverables, content strategy, Instagram management, services, workflow, commercial terms, and primary objectives. All sections expand for PDF printing.
    - **Card 2 • Custom Website (`₹25,000/-` One-Time):** Domain + Hosting included, bespoke light dermatologist design, mobile call/WhatsApp booking, medical SEO schema, and **Website AMC: `₹2,500/- month`**.
-   - **Card 3 • SEO + AISO (`₹2,500 / month` • 6-Month Contract):** Local Google SEO + AI Search Optimization (Rank on ChatGPT & AI Search).
+   - **Card 3 • SEO + AISO (`₹2,500 / month` • 6-Month Contract):** Local Google SEO + AI Search Optimization (Rank on ChatGPT & AI Search), with a blue **Result: Chat GPT Ranking and Google Ranking** banner.
    - **Card 4 • Google Ads (`₹20,000` Ad Spend in 1 to 2 Months -> `₹20,000` Google Offer):** Deep keyword research connected to Website & GMB, direct phone-call lead generation.
    - **Card 5 • GMB Posting & SEO (`FREE` Card with Floating `FREE` Tag):** Dedicated complimentary card covering GMB content posting, local Map Pack SEO, profile optimization, and review visibility support.
