@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SAYS SKINN — Dermatology & Aesthetics | Interactive UI & Proposal Logic
+   SAYS SKINN | Dermatology & Aesthetics • Interactive UI & Proposal Logic
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
